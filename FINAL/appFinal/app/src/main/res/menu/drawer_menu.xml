@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="CLIENTE">
+        <menu>
+            <item
+                android:id="@+id/LoginCliente"
+                android:icon="@drawable/login"
+                android:title="LOGIN" />
+            <item
+                android:id="@+id/RegistroCliente"
+                android:icon="@drawable/ic_baseline_app_registration_24"
+                android:title="REGISTRO" />
+        </menu>
+
+    </item>
+    <item android:title="EMPRESA">
+        <menu>
+            <item
+                android:id="@+id/LoginEmpresa"
+                android:icon="@drawable/login"
+                android:title="LOGIN" />
+            <item
+                android:id="@+id/RegistroEmpres"
+                android:icon="@drawable/ic_baseline_app_registration_24"
+                android:title="REGISTRO" />
+        </menu>
+
+    </item>
+    <item android:title="Desarrollador">
+        <menu>
+            <item
+                android:id="@+id/informacion"
+                android:icon="@drawable/ic_baseline_perm_device_information_24"
+                android:title="Información" />
+            <item
+                android:id="@+id/proceso"
+                android:icon="@drawable/ic_baseline_self_improvement_24"
+                android:title="Proceso" />
+        </menu>
+
+    </item>
+</menu>
