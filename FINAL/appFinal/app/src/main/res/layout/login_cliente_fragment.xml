@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Fragmento.LoginClienteFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="687dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/fondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="192dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="53dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/login3">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <EditText
+            android:id="@+id/editTextuser"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edittextredondeado"
+            android:drawableRight="@drawable/ic_action_mail"
+            android:ems="10"
+            android:hint="Mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16dp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextpass"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edittextredondeado"
+            android:drawableRight="@drawable/ic_action_lock"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"></EditText>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/botonlogin"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_redondo1"
+                android:drawableTop="@drawable/ic_baseline_login_24"
+                android:gravity="center"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+
+                >
+
+            </Button>
+
+
+            <TextView
+                android:id="@+id/editTextCliqueable"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_redondo1"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_baseline_create_24"
+                android:gravity="center"
+                android:hint="Registrarse"
+                android:textColorHint="#ffff"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
+
+
