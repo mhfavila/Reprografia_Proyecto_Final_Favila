@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".Fragmento.AjustesClienteFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/editemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittextredondeado"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:hint="pulsa en BUSCAR"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"></TextView>
+
+        <Button
+            android:id="@+id/buscar"
+            android:layout_width="155dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_redondo"
+            android:drawableTop="@drawable/ic_baseline_search_24"
+            android:gravity="center"
+            android:hint="BUSCAR"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"></Button>
+
+
+        <EditText
+            android:id="@+id/editpasss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittextredondeado"
+            android:drawableRight="@drawable/ic_action_lock"
+            android:hint="Contraseña"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"></EditText>
+
+
+        <EditText
+            android:id="@+id/editnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittextredondeado"
+            android:drawableRight="@drawable/ic_baseline_name_24"
+            android:hint="Nombre"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"></EditText>
+
+
+        <EditText
+            android:id="@+id/editapellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittextredondeado"
+            android:drawableRight="@drawable/ic_baseline_name_24"
+            android:hint="Apellidos"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/white"></EditText>
+
+
+        <TextView
+            android:id="@+id/edittelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittextredondeado"
+            android:drawableRight="@drawable/ic_baseline_smartphone_24"
+            android:hint="Teléfono(NO EDITABLE)"
+            android:inputType="numberSigned"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="40dp"
+                android:stretchColumns="0,1">
+
+
+                <Button
+                    android:id="@+id/editar"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_redondo"
+
+                    android:drawableTop="@drawable/ic_baseline_edit_attributes_24"
+                    android:hint="EDITAR"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"></Button>
+
+
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

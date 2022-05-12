@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:padding="20dp"
+    tools:context=".Activity.SubirArchivo">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="345dp"
+        android:layout_height="543dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.439">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.662"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="294dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_redondo"
+            android:drawableRight="@drawable/ic_baseline_add_24"
+
+            android:text="selecionar documento"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+        <EditText
+            android:id="@+id/nombreArchivo"
+            android:layout_width="294dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/edittextredondeado"
+            android:drawableRight="@drawable/ic_baseline_name_24"
+
+            android:hint="nombre del archivo"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+
+
+            android:textColorHint="@color/white" />
+
+
+        <Button
+
+            android:id="@+id/btnUpload"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_redondo"
+            android:drawableRight="@drawable/ic_baseline_cloud_upload_24"
+            android:gravity="center"
+            android:text="Cargar documento"
+            android:textColor="@color/white"
+
+
+            android:textColorHint="@color/white" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/likeImageView"
+            android:layout_width="239dp"
+            android:layout_height="191dp"
+            android:layout_gravity="center"
+
+            ></com.airbnb.lottie.LottieAnimationView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
